@@ -1,0 +1,69 @@
+@import "includes/fonts";
+@import "includes/global";
+@import "includes/variables";
+@import "includes/nav";
+@import "includes/hero";
+@import "includes/blog";
+@import "includes/site-content";
+@import "includes/footer";
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  font-family: $abel;
+
+  a {
+    text-decoration: none;
+  }
+
+  ul {
+    list-style: none;
+  }
+
+  h1 {
+    font-family: $lexend;
+    font-size: 2.5rem;
+  }
+
+  h2 {
+    font-family: $lexend;
+  }
+
+  h3 {
+    font-family: $abel;
+    font-size: 1.3rem;
+  }
+
+  .btn {
+    border: 1px solid transparent;
+    border-radius: 2rem;
+    padding: 1rem 3rem;
+    font-size: 1rem;
+    font-family: $livvic;
+    cursor: pointer;
+
+    &:hover {
+      color: white;
+    }
+  }
+
+  span {
+    font-family: $abel;
+  }
+
+  .container {
+    margin: 0 5vw;
+  }
+
+  .text-gray {
+    color: $text-gray;
+  }
+
+  p {
+    font-family: $lexend;
+    color: $text-light;
+  }
+}

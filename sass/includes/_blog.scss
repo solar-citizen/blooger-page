@@ -1,0 +1,62 @@
+// BLOG template
+
+.blog {
+  background: url("/assets/abstract-bg.png");
+  background-repeat: no-repeat;
+  background-position: right;
+  height: 100vh;
+  width: 100%;
+  background-size: 55%;
+
+  .blog-post {
+    padding-top: 6rem;
+
+    .blog-content {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      width: 80%;
+      margin: 3rem 2rem;
+      box-shadow: 0 15px 20px rgba($color: #000, $alpha: 0.2);
+
+      .blog-title {
+        padding: 2rem 0;
+      }
+
+      .btn-blog {
+        padding: 0.7rem 2rem;
+        background: $sky-gradient;
+        margin: 0.5rem;
+      }
+
+      span {
+        display: block;
+      }
+    }
+  }
+
+  .owl-nav {
+    position: absolute;
+    top: 0;
+    margin: 0;
+    width: 100%;
+
+    .owl-prev .owl-nav-prev,
+    .owl-next .owl-nav-next {
+      color: $midnight;
+      background: transparent;
+      font-size: 2rem;
+    }
+  }
+
+  .owl-theme {
+    .owl-nav {
+      [class*="owl"] {
+        &:hover {
+          background: transparent;
+          color: $text-gray;
+        }
+      }
+    }
+  }
+}

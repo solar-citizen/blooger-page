@@ -1,0 +1,27 @@
+// HERO template
+
+.hero {
+  background: url("/assets/background-image-1.png");
+  background-size: cover;
+  height: 110vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  h1,
+  h3 {
+    margin: 0.3rem;
+    color: white;
+  }
+
+  .btn {
+    margin: 1.8rem;
+    background: $sky-gradient;
+
+    &:hover {
+      background: transparent;
+      border: 1px solid white;
+    }
+  }
+}

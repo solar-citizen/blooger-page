@@ -1,0 +1,105 @@
+// NAV template
+
+.nav {
+  background: white;
+  padding: 0 2rem;
+  height: 0;
+  min-height: 10vh;
+  overflow: hidden;
+  transition: height 1s ease-in-out;
+
+  &.collapse {
+    height: 30rem;
+  }
+
+  a {
+    color: $midnight;
+  }
+
+  .nav-brand {
+    a {
+      display: block;
+      font-size: 1.6rem;
+      padding: 1rem 0;
+      font-family: $abel;
+    }
+  }
+
+  .toggle-collapse {
+    position: absolute;
+    top: 0;
+    width: 90%;
+    cursor: pointer;
+    display: none;
+
+    .toggle-icons {
+      display: flex;
+      justify-content: flex-end;
+      padding: 1.7rem 0;
+
+      i {
+        font-size: 1.4rem;
+        color: $text-gray;
+      }
+    }
+  }
+
+  .nav-menu {
+    justify-content: space-between;
+  }
+
+  .nav-items {
+    display: flex;
+    margin: 0;
+
+    .nav-link {
+      font-family: $abel;
+      padding: 1.6rem 1rem;
+      font-size: 1.1rem;
+      position: relative;
+
+      &:hover {
+        background: $midnight;
+
+        a {
+          color: white;
+        }
+      }
+    }
+  }
+
+  .social {
+    padding: 1.4rem 0;
+
+    i {
+      padding: 0 0.2rem;
+
+      &:hover {
+        color: #a1c4cf;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .nav {
+    background: black;
+
+    .nav-menu,
+    .nav-items {
+      flex-direction: column;
+    }
+
+    .toggle-collapse {
+      display: initial;
+    }
+  }
+}
+
+@media only screen and (max-width: 520px) {
+  .nav {
+    .toggle-collapse {
+      width: 80%;
+    }
+  }
+}
